@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>Registrasi</h2>
+	<form action="prosreg.php" method="POST" enctype="multipart/form-data">
+		NIM: <input type="number" name="nim" required=""><br>
+		Nama: <input type="text" name="nama" required=""><br>
+		Email: <input type="Email" name="email" required=""><br>
+		Jenis Kelamin: <br>
+		<input type="radio" name="jenkel" required="" value="Laki-laki">Laki-laki<br>
+		<input type="radio" name="jenkel" required="" value="Perempuan">Perempuan<br>
+		Program Studi:
+		<select name="prodi" required="">
+			<option value="Manajemen Informatika">Manajemen Informatika</option>
+			<option value="Komputerisasi Akutansi">Komputerisasi Akutansi</option>
+			<option value="Manajemen Pemasaran">Manajemen Pemasaran</option>
+			<option value="Teknik Informatika">Teknik Informatika</option>
+			<option value="Teknik Komputer">Teknik Komputer</option>
+			<option value="Teknik Telekomunikasi">Teknik Telekomunikasi</option>
+			<option value="Sistem Multimedia">Sistem Multimedia</option>
+			<option value="Perhotelan">Perhotelan</option>
+		</select><br>
+		Fakultas:
+		<select name="fak" required="">
+			<option value="FIT">FIT </option>
+			<option value="FIK">FIK </option>
+			<option value="FIF">FIF </option>
+			<option value="FEB">FEB </option>
+			<option value="FKB">FKB </option>
+			<option value="FRI">FRI </option>
+			<option value="FTE">FTE </option>
+		</select><br>
+		Hobi:<br>
+		<input type="checkbox" name="hobi[]" value="Berenang">Berenang<br>
+		<input type="checkbox" name="hobi[]" value="Nonton">Nonton<br>
+		<input type="checkbox" name="hobi[]" value="Membaca">Membaca<br>
+		<input type="checkbox" name="hobi[]" value="Main Game">Main Game<br>
+		<input type="file" name="pict" accept="image/*" required="">
+		<input type="submit" name="submit" value="Kirim">
+	</form>
+</body>
+</html>
